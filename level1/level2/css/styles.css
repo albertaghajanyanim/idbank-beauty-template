@@ -1,0 +1,636 @@
+input:focus,
+input:hover {
+    outline: none;
+    box-shadow: none
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center
+}
+
+.flexContainer {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body,
+html {
+    overflow: auto;
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0
+}
+
+button {
+    background: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.formGroup {
+    margin-bottom: 24px
+}
+
+.cardsFormGroup {
+    margin-bottom: 12px;
+
+}
+
+input,
+select {
+    height: 56px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: rgba(52, 58, 64, 1);
+    border-radius: 10px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 16px;
+    transition: border-color .3s ease;
+    -webkit-transition: border 500ms ease-out;
+    -moz-transition: border 500ms ease-out;
+    -o-transition: border 500ms ease-out;
+}
+
+select {
+    color: rgba(52, 58, 64, 0.7);
+}
+
+input::placeholder {
+    color: rgba(52, 58, 64, 0.7);
+}
+
+.selectColor {
+    color: rgba(52, 58, 64, 1);
+}
+
+input:focus {
+    outline: none;
+}
+
+input.error,
+select.error {
+    border-bottom: 1px solid #c00
+}
+
+input.selectDate,
+select.selectDate {
+    width: 48.5%;
+    background: #fff 0 0 no-repeat padding-box;
+}
+
+input::-ms-expand,
+select::-ms-expand {
+    display: none;
+}
+
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: none
+}
+
+input[type=submit],
+select[type=submit] {
+    width: 100%;
+    min-width: 121px;
+    height: 56px;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #000000;
+    opacity: 1;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+input[type=submit]:focus,
+select[type=submit]:focus {
+    outline: none;
+    box-shadow: none
+}
+
+input[type=submit]:disabled,
+select[type=submit]:disabled {
+    pointer-events: none;
+    cursor: none;
+    transition: 0.3s;
+    background: #e6e6e6;
+}
+
+label {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #808080;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 16px;
+    text-transform: capitalize;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+span {
+    color: rgba(52, 58, 64, 1);
+}
+
+.hiddenElement {
+    display: none;
+}
+
+.main {
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    background-size: cover;
+    background-position: 50%;
+    justify-content: flex-start;
+}
+
+.main .card {
+    width: 360px;
+    position: relative;
+}
+
+.main .cardHeader {
+    width: 360px;
+}
+
+.paymentDataTable {
+    padding: 16px 8px;
+    border-radius: 14px;
+    background: #F3F5F8 0 0 no-repeat padding-box;
+}
+
+.flexItem {
+    text-align: center;
+    color: #343A40;
+    word-wrap: break-word;
+}
+
+#errorBlock {
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #EB5757;
+}
+
+.sessionBlock div {
+    margin-bottom: 5px;
+}
+
+.cdate {
+    display: flex;
+}
+
+.cdate>div:first-child {
+    width: 58%
+}
+
+.cdate>div:last-child {
+    width: 39%
+}
+
+#indicator {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+#indicator .flexContainer {
+    height: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+#indicator img {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px
+}
+
+#description {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 16px;
+    color: #343A40;
+    text-indent: 10px;
+}
+
+#numberCountdown {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.main .cardFooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 360px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.main .cardFooter .bankLogo {
+    width: 30%;
+}
+
+.main .cardFooter>div:first-child {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+.main .payment-description {
+    text-align: left;
+    margin-top: 64px;
+}
+
+.main .cardImg {
+    width: 60%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.main .cardImg>div {
+    width: 80%
+}
+
+.errorColor {
+    border: 1px solid #EB5757;
+}
+
+.panContainer {
+    position: relative;
+}
+
+.cardIcon {
+    position: absolute;
+    width: 46px;
+    height: 32px;
+    right: 8px;
+    top: 12px;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 800px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .main .card {
+        width: 550px;
+    }
+    .paymentDataTable {
+        padding: 22px 14px;
+    }
+    .main .cardHeader {
+        margin: 20px 0 20px 0;
+        width: 550px;
+    }
+    .sessionBlock p {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    #numberCountdown {
+        font-size: 20px;
+    }
+    .main .cardFooter {
+        width: 550px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .formGroup {
+        margin-bottom: 45px;
+    }
+    .formGroup label {
+        margin-bottom: 15px;
+    }
+    input::-webkit-input-placeholder,
+    select::-webkit-input-placeholder {
+        height: 56px;
+        font-size: 25px;
+    }
+    input,
+    select {
+        height: 56px;
+        font-size: 25px;
+    }
+    label {
+        font-size: 20px;
+    }
+    .main .cardImg {
+        width: 70%;
+    }
+    .main .payButton {
+        margin-top: 16px;
+        height: 56px;
+    }
+    input[type=submit],
+    select[type=submit] {
+        height: 56px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 425px) {
+    .main .card {
+        width: 330px;
+    }
+    .main .cardHeader {
+        width: 330px;
+    }
+    .main .cardFooter {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main .cardHeader {
+        width: 250px;
+    }
+    .main .card {
+        width: 250px;
+    }
+
+    .main .cardFooter {
+        width: 250px;
+    }
+}
+
+@media screen  and (min-height: 728px) and (max-height: 896px) {
+    input,
+    select {
+        font-size: 14px;
+        height: 50px;
+    }
+    input::-webkit-input-placeholder,
+    select::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .main .payButton {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    #errorBlock {
+        font-size: 14px;
+    }
+
+    .main .cardFooter {
+        margin-top: 48px;
+    }
+
+    .main .payment-description {
+        margin-top: 80px;
+    }
+
+    .cardIcon {
+        position: absolute;
+        width: 42px;
+        height: 32px;
+        right: 8px;
+        top: 9px;
+    }
+}
+
+@media screen  and (min-height: 684px) and (max-height: 728px) {
+    input,
+    select {
+        font-size: 14px;
+        height: 50px;
+    }
+    input::-webkit-input-placeholder,
+    select::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .main .payButton {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    #errorBlock {
+        font-size: 14px;
+    }
+
+    .main .cardFooter {
+        margin-top: 24px;
+    }
+
+    .main .payment-description {
+        margin-top: 64px;
+    }
+
+    .cardIcon {
+        position: absolute;
+        width: 42px;
+        height: 32px;
+        right: 8px;
+        top: 9px;
+    }
+}
+
+@media screen and (min-height: 620px) and (max-height: 684px) {
+    input,
+    select {
+        font-size: 14px;
+        height: 50px;
+    }
+    input::-webkit-input-placeholder,
+    select::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .main .payButton {
+        font-size: 14px;
+        height: 50px;
+    }
+
+    #errorBlock {
+        font-size: 14px;
+    }
+
+    .main .cardFooter {
+        margin-top: 20px;
+    }
+
+    .main .payment-description {
+        margin-top: 40px;
+    }
+
+    .cardIcon {
+        position: absolute;
+        width: 42px;
+        height: 32px;
+        right: 8px;
+        top: 9px;
+    }
+}
+
+@media screen and (min-height: 500px) and (max-height: 620px) {
+
+    input,
+    select {
+        font-size: 12px;
+        height: 40px;
+    }
+    input::-webkit-input-placeholder,
+    select::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+    .main .payButton {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    #errorBlock {
+        font-size: 12px;
+    }
+
+    .main .cardFooter {
+        margin-top: 8px;
+    }
+
+    .main .payment-description {
+        margin-top: 12px;
+    }
+
+    .cardIcon {
+        position: absolute;
+        width: 42px;
+        height: 24px;
+        right: 8px;
+        top: 8px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+
+    input,
+    select {
+        font-size: 10px;
+        height: 36px;
+    }
+    input::-webkit-input-placeholder,
+    select::-webkit-input-placeholder {
+        font-size: 10px;
+    }
+    .main .payButton {
+        font-size: 10px;
+        height: 36px;
+    }
+
+    #errorBlock {
+        font-size: 10px;
+    }
+
+    .main .cardFooter {
+        margin-top: 2px;
+    }
+
+    .main .payment-description {
+        margin-top: 2px;
+    }
+
+    .cardIcon {
+        position: absolute;
+        width: 42px;
+        height: 24px;
+        right: 8px;
+        top: 8px;
+    }
+    .cardsFormGroup {
+        font-size: 10px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+}
